@@ -9,6 +9,7 @@
     }
 }
 
+// Começo dos stilo dos ultimos episodios
 .latestEpisodes {
     ul {
         list-style: none;
@@ -67,19 +68,20 @@
                         margin-left: 0.5rem;
                         padding-left: 0.5rem;
                         position: relative;
+
+                        &::before {
+                            content: "";
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 2px;
+                            background: #DDD;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
                     }
 
-                    &::before {
-                        content: "";
-                        width: 4px;
-                        height: 4px;
-                        border-radius: 2px;
-                        background: #DDD;
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                    }
                 }
 
             }
@@ -111,6 +113,7 @@
 
     }
 }
+// Fim dos stilo dos ultimos episodios
 
 .allEpisodes {
     padding-bottom: 2rem;
